@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>update-user</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Update User</ion-card-title>
+      <ion-card-subtitle>Akses melalui Put</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-input label="Nama Lengkap" [(ngModel)]="form.name" [ngModelOptions]="{standalone: true}" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+      <br>
+      <ion-input label="Pekerjaan" [(ngModel)]="form.job" [ngModelOptions]="{standalone: true}" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+    </ion-card-content>
+  
+    <ion-button expand="block" (click)="doSubmitWithValidateFormInput()">Submit</ion-button>
+  </ion-card>
+</ion-content>
+
